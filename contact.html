@@ -211,7 +211,7 @@
   <!-- RIGHT: FORM -->
   <div class="contact-form-side fade-up">
     <div class="form-wrap">
-      <form id="formContent" action="https://formsubmit.co/avalormarketingagency@gmail.com" method="POST" onsubmit="return submitContactForm(event)">
+      <form id="formContent" action="https://formsubmit.co/avalormarketingagency@gmail.com" method="POST">
         <input type="hidden" name="_subject" value="New project enquiry from Avalor Marketing Agency website">
         <input type="hidden" name="_template" value="table">
         <input type="hidden" name="_captcha" value="false">
@@ -343,16 +343,5 @@
 </a>
 
 <script src="shared.js"></script>
-<script>
-function submitContactForm() {
-  const fname = document.getElementById('fname').value.trim();
-  const email = document.getElementById('email').value.trim();
-  if (!fname || !email) {
-    alert('Please fill in at least your name and email address.');
-    return false;
-  }
-  return true;
-}
-</script>
 </body>
 </html>

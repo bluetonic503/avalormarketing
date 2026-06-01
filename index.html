@@ -1351,7 +1351,7 @@
     </div>
   </div>
   <div>
-    <form class="contact-form" id="contactForm" action="https://formsubmit.co/avalormarketingagency@gmail.com" method="POST" onsubmit="return submitForm(event)">
+    <form class="contact-form" id="contactForm" action="https://formsubmit.co/avalormarketingagency@gmail.com" method="POST">
       <input type="hidden" name="_subject" value="New enquiry from Avalor Marketing Agency website">
       <input type="hidden" name="_template" value="table">
       <input type="hidden" name="_captcha" value="false">
@@ -1545,13 +1545,6 @@
   }, { threshold: 0.1 });
   document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 
-  // FORM SUBMIT
-  function submitForm() {
-    const email = document.getElementById('email').value.trim();
-    const firstName = document.getElementById('firstName').value.trim();
-    if (!firstName || !email) { alert('Please fill in at least your name and email.'); return false; }
-    return true;
-  }
 </script>
 </body>
 </html>
