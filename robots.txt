@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.avalonmarketing.co.ke/sitemap.xml
+Sitemap: https://www.avalormarketing.co.ke/sitemap.xml

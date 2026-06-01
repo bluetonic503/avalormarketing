@@ -3,6 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" type="image/png" href="images/logo.png" />
+<link rel="apple-touch-icon" href="images/logo.png" />
 
 <!-- ── PRIMARY SEO ── -->
 <title>Avalor Marketing Agency | Digital Marketing, SEO & Paid Ads — Nairobi, Kenya</title>
@@ -42,7 +44,7 @@
   "@type": "MarketingAgency",
   "name": "Avalor Marketing Agency",
   "url": "https://www.avalormarketing.com",
-  "logo": "logo.png",
+  "logo": "images/logo.png",
   "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=80",
   "description": "Full-service digital marketing agency in Nairobi, Kenya. Specialising in SEO, paid advertising, email marketing, content strategy, and growth for startups.",
   "telephone": "+254141510631",
@@ -182,14 +184,26 @@
     border-bottom: 1px solid rgba(201,168,76,0.12);
   }
   .nav-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem;
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1.8rem;
+    font-size: 1.45rem;
     font-weight: 300;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.16em;
     color: var(--white);
     text-decoration: none;
+    line-height: 1;
   }
-  .nav-logo span { color: var(--gold); }
+  .nav-logo img {
+    display: block;
+    width: 42px;
+    height: 42px;
+    object-fit: cover;
+    object-position: 50% 32%;
+    border-radius: 50%;
+  }
+  .nav-logo .brand-name span { color: var(--gold); }
   .nav-links { display: flex; gap: 2.5rem; list-style: none; }
   .nav-links a {
     font-size: 0.78rem;
@@ -665,7 +679,8 @@
     padding: 5rem 4rem 2.5rem;
   }
   .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 4rem; margin-bottom: 4rem; }
-  .footer-brand .nav-logo { display: block; margin-bottom: 1rem; font-size: 2rem; }
+  .footer-brand .nav-logo { display: inline-flex; margin-bottom: 1rem; }
+  .footer-brand .nav-logo img { width: 46px; height: 46px; }
   .footer-tagline { font-size: 0.82rem; color: var(--muted); line-height: 1.7; max-width: 280px; }
   .footer-social { display: flex; gap: 1rem; margin-top: 1.5rem; }
   .social-link {
@@ -743,7 +758,7 @@
 
 <!-- NAV -->
 <nav id="nav">
-  <a href="index.html" class="nav-logo">Aval<span>or</span></a>
+  <a href="index.html" class="nav-logo" aria-label="Avalor Marketing Agency home"><img src="images/logo.png" alt="" /><span class="brand-name">Aval<span>or</span></span></a>
   <ul class="nav-links">
     <li><a href="about.html">About</a></li>
     <li><a href="services.html">Services</a></li>
@@ -1405,7 +1420,7 @@
 <footer>
   <div class="footer-grid">
     <div class="footer-brand">
-      <a href="index.html" class="nav-logo">Aval<span>on</span></a>
+      <a href="index.html" class="nav-logo" aria-label="Avalor Marketing Agency home"><img src="images/logo.png" alt="" /><span class="brand-name">Aval<span>or</span></span></a>
       <p class="footer-tagline">Full-service digital marketing agency. Built for startups. Driven by results. Based in Nairobi, Kenya.</p>
       <div class="footer-social">
         <a href="#" class="social-link" aria-label="LinkedIn">in</a>
